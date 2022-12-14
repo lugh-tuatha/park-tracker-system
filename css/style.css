@@ -90,11 +90,30 @@ input:focus {
     margin-top: 2px;
 }
 
+/* view sheets */
+.view-sheets{
+    margin: 0px 0 0 138px;
+}
+
+.view-sheets img{
+    width: 50px;
+    display: flex;
+}
+
+.view-sheets p{
+    display: inline;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.view-sheets a{
+    color: black;
+}
 /* footer */
 footer{
     background-color: gray;
     height: 41px;
-    margin-top: 188.77px;
+    margin-top: 93.77px;
 }
 
 footer p{
