@@ -1,0 +1,104 @@
+/* global style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* common style */
+img{
+    margin: 20px 0 0 20px;
+    width: 150px;
+}
+
+button{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    margin-left: 70px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #c7c7c7;
+}
+
+p{
+    font-weight: 600;
+    font-size: 27px;
+    text-align: center;
+}
+
+/* form start */
+form{
+    margin: 30px 0 0 65px;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+label{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+:placeholder-shown{
+    font-size: 16px;
+}
+
+#vehicle{
+    width: 161px;
+}
+
+#plate{
+    width: 161px;
+}
+
+#in{
+    width: 128px;
+}
+
+#date{
+    width: 187px;
+}
+
+/* cars counter */
+.container{
+    width: 242px;
+    height: 120px;
+    margin: 30px 0 0 65px;
+    border: 1px solid black;
+}
+
+.ent{
+    font-size: 20px;
+}
+
+.container i{
+    margin-top: 2px;
+}
+
+/* footer */
+footer{
+    background-color: gray;
+    height: 41px;
+    margin-top: 188.77px;
+}
+
+footer p{
+    font-weight: 200;
+    font-size: 14px;
+    padding-top: 20px;
+}

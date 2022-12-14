@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking record</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- logo -->
+    <img src="img/Pay parking.png" alt="">
+
+    <!-- form -->
+    <form name="submit-to-google-sheet" id="myForm" autocomplete="off">
+        <label>VEHICLE:</label>
+        <input type="text" name="Vehicle" id="vehicle" placeholder="ex. HONDA"><br>
+        <label>PLATE #:</label>
+        <input type="text" name="Plate" id="plate" placeholder="ex. AI4 VXL"><br>
+        <label>IN - 1st 3hrs:</label>
+        <input type="text" name="In" id="in" placeholder="ex. 7:14 - 10:14"><br>
+        <label>DATE:</label>
+        <input type="text" name="Date" id="date" placeholder="ex. 12 - 14 - 2022"><br>
+        <button onclick="resetForm()" type="submit">SUBMIT</button>
+    </form>
+
+    <!-- cars counter -->
+    <div class="container">
+        <p id="count-el">0</p>
+        <p class="ent">CARS ENTERED</p>
+        <button onclick="increment()"><i class="fa-solid fa-caret-up fa-2x"></i></button>
+    </div>
+
+    <!-- ranking -->
+
+    <!-- footer -->
+    <footer>
+        <p>©Ace</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
