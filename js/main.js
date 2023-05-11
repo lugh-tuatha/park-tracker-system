@@ -20,3 +20,12 @@ form.addEventListener("submit", (e) => {
     .catch((error) => console.error("Error!", error.message));
 });
 
+// success message
+const successMessage = document.getElementById("success-message")
+function success(){
+  successMessage.style.display = "block";
+
+  setTimeout(function() {
+    successMessage.style.display = "none";
+  }, 3000)
+}

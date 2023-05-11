@@ -109,6 +109,14 @@ input:focus {
 .view-sheets a{
     color: black;
 }
+
+#success-message {
+    color: green;
+    font-size: 1rem;
+    font-weight: normal;
+    display: none;
+}
+
 /* footer */
 footer{
     background-color: gray;
