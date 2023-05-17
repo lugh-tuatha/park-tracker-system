@@ -18,8 +18,8 @@ button{
     border-radius: 10px;
     width: 100px;
     height: 30px;
-    margin-left: 70px;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 button:hover{
@@ -33,14 +33,9 @@ p{
 }
 
 /* form start */
-form{
-    margin: 30px 0 0 65px;
-}
-
 input{
     border: none;
     border-bottom: 1px solid black;
-    margin-bottom: 10px;
     font-size: 16px;
 }
 
@@ -58,20 +53,11 @@ input:focus {
     font-size: 16px;
 }
 
-#vehicle{
-    width: 161px;
-}
-
-#plate{
-    width: 161px;
-}
-
-#in{
-    width: 128px;
-}
-
-#date{
-    width: 187px;
+#myForm{
+    width: 20rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 /* cars counter */
@@ -79,6 +65,9 @@ input:focus {
     width: 242px;
     height: 120px;
     margin: 30px 0 0 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: 1px solid black;
 }
 
@@ -92,16 +81,15 @@ input:focus {
 
 /* view sheets */
 .view-sheets{
-    margin: 0px 0 0 138px;
+    width: 100%;
 }
-
 .view-sheets img{
     width: 50px;
     display: flex;
+    margin: 0 auto;
 }
 
 .view-sheets p{
-    display: inline;
     font-size: 15px;
     font-weight: 200;
 }
@@ -115,17 +103,4 @@ input:focus {
     font-size: 1rem;
     font-weight: normal;
     display: none;
-}
-
-/* footer */
-footer{
-    background-color: gray;
-    height: 41px;
-    margin-top: 93.77px;
-}
-
-footer p{
-    font-weight: 200;
-    font-size: 14px;
-    padding-top: 20px;
 }
