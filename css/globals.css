@@ -1,0 +1,75 @@
+/* global style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+ul li a.active{
+  color: blue;
+}
+
+/*--------- navbar start ---------*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+  font-weight: 600;
+}
+
+nav img {
+  width: 150px;
+}
+
+/*--------- reusable css ---------*/
+input {
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 16px;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+
+:placeholder-shown {
+  font-size: 16px;
+}
+
+button {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: #c7c7c7;
+}

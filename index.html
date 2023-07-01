@@ -7,43 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parking record</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/responsiveness.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 
 <body>
-    <!-- logo -->
-    <img src="img/Pay parking.png" alt="">
+    <!-- nav -->
+    <nav>
+        <img src="img/Pay parking.png" alt="">
 
-    <!-- form -->
-    <form name="submit-to-google-sheet" id="myForm" autocomplete="off">
-        <label>VEHICLE:</label>
-        <input type="text" name="Vehicle" id="vehicle" placeholder="ex. HONDA"><br>
-        <label>PLATE #:</label>
-        <input type="text" name="Plate" id="plate" placeholder="ex. AI4 VXL"><br>
-        <label>IN - 1st 3hrs:</label>
-        <input type="text" name="In" id="in" placeholder="ex. 7:14 - 10:14"><br>
-        <label>Out:</label>
-        <input type="text" name="Out" id="out" placeholder="ex. 7:14"><br>
-        <label>Price:</label>
-        <input type="text" name="Price" id="price" placeholder="ex. 50"><br>
-        <label>DATE:</label>
-        <input type="text" name="Date" id="date" placeholder="ex. 12 - 14 - 2022"><br>
-        <button onclick="success()" type="submit" id="submit-button">SUBMIT</button>
-    </form>
-    <p id="success-message">Success!</p>
-
-    <!-- cars counter -->
-    <div class="container">
-        <p id="count-el">0</p>
-        <p class="ent">CARS ENTERED</p>
-        <button onclick="increment()"><i class="fa-solid fa-caret-up fa-2x"></i></button>
+        <ul>
+            <li><a href="index.html" class="active">Parking</a></li>
+            <li><a href="meralco.html">Meralco</a></li>
+        </ul>
+    </nav>
+    <div class="parking-container">        
+        <!-- form -->
+        <form name="submit-to-google-sheet" id="myForm" autocomplete="off">
+            <label>VEHICLE:</label>
+            <input type="text" name="Vehicle" id="vehicle" placeholder="ex. HONDA"><br>
+            <label>PLATE #:</label>
+            <input type="text" name="Plate" id="plate" placeholder="ex. AI4 VXL"><br>
+            <label>IN - 1st 3hrs:</label>
+            <input type="text" name="In" id="in" placeholder="ex. 7:14 - 10:14"><br>
+            <label>Out:</label>
+            <input type="text" name="Out" id="out" placeholder="ex. 7:14"><br>
+            <label>Price:</label>
+            <input type="text" name="Price" id="price" placeholder="ex. 50"><br>
+            <label>DATE:</label>
+            <input type="text" name="Date" id="date" placeholder="ex. 12 - 14 - 2022"><br>
+            <button onclick="success()" type="submit" id="submit-button">SUBMIT</button>
+        </form>
+        <p id="success-message">Success!</p>
+        
+        <!-- cars counter -->
+        <div class="container">
+            <p id="count-el">0</p>
+            <p class="ent">CARS ENTERED</p>
+            <button onclick="increment()"><i class="fa-solid fa-caret-up fa-2x"></i></button>
+        </div>
+        
+        <!-- view sheets -->
+        <div class="view-sheets">
+            <img src="img/sheet.png" alt="sheets logo">
+            <p><a href="https://docs.google.com/spreadsheets/d/1rGNJqLqj3wbkqKJR4jhTuO7PxS5IsaXAcoJtWdHEgCI/edit#gid=0"
+                    target="_blank">view record</a></p>
+        </div>
     </div>
 
-    <!-- view sheets -->
-    <div class="view-sheets">
-        <img src="img/sheet.png" alt="sheets logo"> <p><a href="https://docs.google.com/spreadsheets/d/1rGNJqLqj3wbkqKJR4jhTuO7PxS5IsaXAcoJtWdHEgCI/edit#gid=0" target="_blank">view record</a></p>
-    </div>
 
     <script src="js/main.js"></script>
 

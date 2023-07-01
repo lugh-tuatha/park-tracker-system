@@ -23,9 +23,9 @@ form.addEventListener("submit", (e) => {
 // success message
 const successMessage = document.getElementById("success-message")
 function success(){
-  successMessage.style.display = "block";
+  successMessage.style.opacity = "1";
 
   setTimeout(function() {
-    successMessage.style.display = "none";
+    successMessage.style.opacity = "0";
   }, 3000)
 }

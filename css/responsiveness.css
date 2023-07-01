@@ -1,0 +1,21 @@
+@media screen and (max-width: 750px) {
+  .parking-container {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .parking-container{
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container{
+    width: 100%;
+  }
+
+  .meralco-form{
+    display: block;
+  }
+}
