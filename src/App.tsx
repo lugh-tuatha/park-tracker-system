@@ -90,9 +90,6 @@ function App() {
           </CardContent>
         </Card>
       </div>
-
-
-
     </Layout>
   )
 }

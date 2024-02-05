@@ -1,4 +1,5 @@
 import { ModeToggle } from "@/components/mode-toggle"
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -7,8 +8,12 @@ function Header() {
             <div className="flex items-center gap-8">
                 <h1 className='typography-h3'>Logo</h1>
                 <ul className="flex items-center gap-4">
-                    <li>Home</li>
-                    <li>Dashboard</li>
+                    <li>
+                      <Link to='/'>Home</Link>
+                    </li>
+                    <li>
+                      <Link to='/dashboard'>Dashboard</Link>
+                    </li>
                 </ul>
             </div>
             <ModeToggle></ModeToggle>
