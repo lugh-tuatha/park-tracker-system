@@ -10,6 +10,7 @@ import {
 // pages
 import Dashboard from './pages/dashboard';
 import App from './App';
+import History from './pages/history';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <Dashboard />,
+  },
+  {
+    path: "/history",
+    element: <History />,
   },
 ]);
 

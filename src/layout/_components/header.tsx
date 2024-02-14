@@ -14,6 +14,9 @@ function Header() {
                     <li>
                       <Link to='/dashboard'>Dashboard</Link>
                     </li>
+                    <li>
+                      <Link to='/history'>History</Link>
+                    </li>
                 </ul>
             </div>
             <ModeToggle></ModeToggle>
